@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* get nav aria label */
+nav[aria-label="Pagination Navigation"] {
+    @apply w-full;
+}
+
+.js-snackbar__message {
+    @apply text-sm;
+}
+
+/* input type date icon change to dark */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.note-editable {
+    @apply text-sm;
+    font-family: "Inter", sans-serif;
+}
